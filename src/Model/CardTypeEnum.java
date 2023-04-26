@@ -7,42 +7,68 @@ import java.util.List;
  * @author Warington
  *
  */
+
 public enum CardTypeEnum {
 
 	/** 0 */
-	Hearts("Hearts") {
+	Hearts("Hearts","\u2665","\u001B[31m") {
 	},
 	/** 1 */
-	Spade("Spade") {
+	Spade("Spade","\u2660","\u001B[90m") {
 	},
 	/** 2 */
-	Club("Club") {
+	Club("Club","\u2663","\u001B[90m") {
 	},
 	/** 3 */
-	Diamond("Diamond") {
+	Diamond("Diamond","\u2666","\u001B[31m") {
 	};
 	
-	/** The display name. */
+	/** The displayName;suitcolor
+	 *  and suiticon  */
+	private String suiticon;
+	private String suitcolor;
 	private String displayName;
 
 	/**
 	 * Instantiates a new Card Type Enum.
 	 *
-	 * @param displayNameX
-	 *            the display name X
+	 * @param displayNameX,suiticonX,suitcolorX
+	 *            the displayNameX, display suiticonX and suitcolorX
 	 */
-	private CardTypeEnum(String displayNameX) {
+	private CardTypeEnum(String displayNameX,String suiticonX,String suitcolorX) {
 		displayName = displayNameX;
+		suiticon = suiticonX;
+		suitcolor = suitcolorX;
 	}
 	
 	/**
-	 * Gets the Card Type name.
+	 * Gets the friendly name.
 	 *
 	 * @return the friendly name
 	 */
+	
 	public String getFriendlyName() {
 		return displayName;
 	}
+	
+	/**
+	 * Gets the Card Type Suit icon.
+	 *
+	 * @return suit icon
+	 */
+	public String getSuitIcon() {
+		return suiticon;
+	}
+	
+	/**
+	 * Gets the Card Type Suit Color.
+	 *
+	 * @return suit color
+	 */
+	public String getSuitColor() {
+		return suitcolor;
+	}
+	
 	
 	// status list for active Card types
 	public static List<CardTypeEnum> getCardTypeList() {

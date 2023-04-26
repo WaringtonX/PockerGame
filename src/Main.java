@@ -139,7 +139,7 @@ public class Main {
         cardresults.setPlayecards(playercards);
 		for(Card playercard : playercards) {
 			
-			display += playercard.getCardcolor() + playercard.getCardnumber().getCardLebal() + playercard.getCardsuit() +" "+ ANSI_RESET;
+			display += playercard.getCardtype().getSuitColor() + playercard.getCardnumber().getCardLebal() + playercard.getCardtype().getSuitIcon() +" "+ ANSI_RESET;
 		}
 		
 		
@@ -158,7 +158,7 @@ public class Main {
 		System.out.println();
 		
         System.out.println("Select your Option");
-        System.out.println(ANSI_RED + "1.Royal Flush \n2.Straight Flush\n3.Four of a Kind\n4.Full House\n5.Flush\n6. Back" + ANSI_RESET);
+        System.out.println(ANSI_RED + "1.Royal Flush \n2.Straight Flush\n3.Four of a Kind\n4.Full House\n5.Flush\n6. Straight\n7.Three of a kind\n8.Two pair\n9.One pair\n10. Back" + ANSI_RESET);
         System.out.println("Option : ");
         Scanner ins = new Scanner(System.in);
         
@@ -184,28 +184,18 @@ public class Main {
                             
                             tcard.setCardnumber(CardNumberEnum.Ten);
                             tcard.setCardtype(CardTypeEnum.Hearts);
-                            tcard.setCardsuit("\u2665");
-                            tcard.setCardcolor(ANSI_RED);
                             
                             tcard1.setCardnumber(CardNumberEnum.Jack);
                             tcard1.setCardtype(CardTypeEnum.Hearts);
-                            tcard1.setCardsuit("\u2665");
-                            tcard1.setCardcolor(ANSI_RED);
                          
                             tcard2.setCardnumber(CardNumberEnum.Queen);
                             tcard2.setCardtype(CardTypeEnum.Hearts);
-                            tcard2.setCardsuit("\u2665");
-                            tcard2.setCardcolor(ANSI_RED);
                             
                             tcard3.setCardnumber(CardNumberEnum.King);
                             tcard3.setCardtype(CardTypeEnum.Hearts);
-                            tcard3.setCardsuit("\u2665");
-                            tcard3.setCardcolor(ANSI_RED);
                             
                             tcard4.setCardnumber(CardNumberEnum.Ace);
                             tcard4.setCardtype(CardTypeEnum.Hearts);
-                            tcard4.setCardsuit("\u2665");
-                            tcard4.setCardcolor(ANSI_RED);
                             
                             testcards.add(tcard);
                             testcards.add(tcard1);
@@ -225,28 +215,18 @@ public class Main {
                         
                         tcard.setCardnumber(CardNumberEnum.Four);
                         tcard.setCardtype(CardTypeEnum.Club);
-                        tcard.setCardsuit("\u2663");
-                        tcard.setCardcolor(ANSI_BRIGHT_BLACK);
                         
                         tcard1.setCardnumber(CardNumberEnum.Five);
                         tcard1.setCardtype(CardTypeEnum.Club);
-                        tcard1.setCardsuit("\u2663");
-                        tcard1.setCardcolor(ANSI_BRIGHT_BLACK);
                                              
                         tcard2.setCardnumber(CardNumberEnum.Six);
                         tcard2.setCardtype(CardTypeEnum.Club);
-                        tcard2.setCardsuit("\u2663");
-                        tcard2.setCardcolor(ANSI_BRIGHT_BLACK);
                         
                         tcard3.setCardnumber(CardNumberEnum.Seven);
                         tcard3.setCardtype(CardTypeEnum.Club);
-                        tcard3.setCardsuit("\u2663");
-                        tcard3.setCardcolor(ANSI_BRIGHT_BLACK);
                         
                         tcard4.setCardnumber(CardNumberEnum.Eight);
                         tcard4.setCardtype(CardTypeEnum.Club);
-                        tcard4.setCardsuit("\u2663");
-                        tcard4.setCardcolor(ANSI_BRIGHT_BLACK);
                         
                         testcards.add(tcard);
                         testcards.add(tcard1);
@@ -266,28 +246,18 @@ public class Main {
                         
                         tcard.setCardnumber(CardNumberEnum.Ace);
                         tcard.setCardtype(CardTypeEnum.Hearts);
-                        tcard.setCardsuit("\u2665");
-                        tcard.setCardcolor(ANSI_RED);
                         
                         tcard1.setCardnumber(CardNumberEnum.Ace);
                         tcard1.setCardtype(CardTypeEnum.Spade);
-                        tcard1.setCardsuit("\u2660");
-                        tcard1.setCardcolor(ANSI_BRIGHT_BLACK);
                                              
                         tcard2.setCardnumber(CardNumberEnum.Ace);
                         tcard2.setCardtype(CardTypeEnum.Club);
-                        tcard2.setCardsuit("\u2663");
-                        tcard2.setCardcolor(ANSI_BRIGHT_BLACK);
                         
                         tcard3.setCardnumber(CardNumberEnum.Ace);
                         tcard3.setCardtype(CardTypeEnum.Diamond);
-                        tcard3.setCardsuit("\u2666");
-                        tcard3.setCardcolor(ANSI_RED);
                         
                         tcard4.setCardnumber(CardNumberEnum.Eight);
                         tcard4.setCardtype(CardTypeEnum.Spade);
-                        tcard4.setCardsuit("\u2660");
-                        tcard4.setCardcolor(ANSI_BRIGHT_BLACK);
                         
                         testcards.add(tcard);
                         testcards.add(tcard1);
@@ -306,28 +276,18 @@ public class Main {
                         
                         tcard.setCardnumber(CardNumberEnum.Ace);
                         tcard.setCardtype(CardTypeEnum.Spade);
-                        tcard.setCardsuit("\u2660");
-                        tcard.setCardcolor(ANSI_BRIGHT_BLACK);
                         
                         tcard1.setCardnumber(CardNumberEnum.Ace);
                         tcard1.setCardtype(CardTypeEnum.Hearts);
-                        tcard1.setCardsuit("\u2665");
-                        tcard1.setCardcolor(ANSI_RED);
                                                                   
                         tcard2.setCardnumber(CardNumberEnum.Ace);
                         tcard2.setCardtype(CardTypeEnum.Club);
-                        tcard2.setCardsuit("\u2663");
-                        tcard2.setCardcolor(ANSI_BRIGHT_BLACK);
                                          
                         tcard3.setCardnumber(CardNumberEnum.Six);
                         tcard3.setCardtype(CardTypeEnum.Spade);
-                        tcard3.setCardsuit("\u2660");
-                        tcard3.setCardcolor(ANSI_BRIGHT_BLACK);
                         
                         tcard4.setCardnumber(CardNumberEnum.Six);
                         tcard4.setCardtype(CardTypeEnum.Diamond);
-                        tcard4.setCardsuit("\u2666");
-                        tcard4.setCardcolor(ANSI_RED);
                         
                         testcards.add(tcard);
                         testcards.add(tcard1);
@@ -347,28 +307,18 @@ public class Main {
                         
                         tcard.setCardnumber(CardNumberEnum.Four);
                         tcard.setCardtype(CardTypeEnum.Diamond);
-                        tcard.setCardsuit("\u2666");
-                        tcard.setCardcolor(ANSI_RED);
                         
                         tcard1.setCardnumber(CardNumberEnum.Eight);
                         tcard1.setCardtype(CardTypeEnum.Diamond);
-                        tcard1.setCardsuit("\u2666");
-                        tcard1.setCardcolor(ANSI_RED);
                         
                         tcard2.setCardnumber(CardNumberEnum.Six);
                         tcard2.setCardtype(CardTypeEnum.Diamond);
-                        tcard2.setCardsuit("\u2666");
-                        tcard2.setCardcolor(ANSI_RED);
                         
                         tcard3.setCardnumber(CardNumberEnum.Seven);
                         tcard3.setCardtype(CardTypeEnum.Diamond);
-                        tcard3.setCardsuit("\u2666");
-                        tcard3.setCardcolor(ANSI_RED);
                         
                         tcard4.setCardnumber(CardNumberEnum.Two);
                         tcard4.setCardtype(CardTypeEnum.Diamond);
-                        tcard4.setCardsuit("\u2666");
-                        tcard4.setCardcolor(ANSI_RED);
                         
                         testcards.add(tcard);
                         testcards.add(tcard1);
@@ -378,11 +328,131 @@ public class Main {
                         getUnitTestResuts(testcards);           	
                     	break;
                     case 6 :
+                        testcards.clear();
+                        tcard = new Card();
+                        tcard1 = new Card();
+                        tcard2 = new Card();
+                        tcard3 = new Card();
+                        tcard4 = new Card();
+                        
+                        tcard.setCardnumber(CardNumberEnum.Three);
+                        tcard.setCardtype(CardTypeEnum.Spade);
+                        
+                        tcard1.setCardnumber(CardNumberEnum.Four);
+                        tcard1.setCardtype(CardTypeEnum.Club);
+                        
+                        tcard2.setCardnumber(CardNumberEnum.Five);
+                        tcard2.setCardtype(CardTypeEnum.Hearts);
+                        
+                        tcard3.setCardnumber(CardNumberEnum.Six);
+                        tcard3.setCardtype(CardTypeEnum.Spade);
+                        
+                        tcard4.setCardnumber(CardNumberEnum.Seven);
+                        tcard4.setCardtype(CardTypeEnum.Diamond);
+                        
+                        testcards.add(tcard);
+                        testcards.add(tcard1);
+                        testcards.add(tcard2);
+                        testcards.add(tcard3);
+                        testcards.add(tcard4);
+                        getUnitTestResuts(testcards);
+                    	 break;
+                    case 7:
+                        testcards.clear();
+                        tcard = new Card();
+                        tcard1 = new Card();
+                        tcard2 = new Card();
+                        tcard3 = new Card();
+                        tcard4 = new Card();
+                        
+                        tcard.setCardnumber(CardNumberEnum.King);
+                        tcard.setCardtype(CardTypeEnum.Spade);
+                        
+                        tcard1.setCardnumber(CardNumberEnum.King);
+                        tcard1.setCardtype(CardTypeEnum.Hearts);
+                        
+                        tcard2.setCardnumber(CardNumberEnum.King);
+                        tcard2.setCardtype(CardTypeEnum.Club);
+                        
+                        tcard3.setCardnumber(CardNumberEnum.Five);
+                        tcard3.setCardtype(CardTypeEnum.Spade);
+                        
+                        tcard4.setCardnumber(CardNumberEnum.Eight);
+                        tcard4.setCardtype(CardTypeEnum.Diamond);
+                        
+                        testcards.add(tcard);
+                        testcards.add(tcard1);
+                        testcards.add(tcard2);
+                        testcards.add(tcard3);
+                        testcards.add(tcard4);
+                        getUnitTestResuts(testcards);
+                    	break;
+                    case 8:
+                        testcards.clear();
+                        tcard = new Card();
+                        tcard1 = new Card();
+                        tcard2 = new Card();
+                        tcard3 = new Card();
+                        tcard4 = new Card();
+                        
+                        tcard.setCardnumber(CardNumberEnum.Three);
+                        tcard.setCardtype(CardTypeEnum.Club);
+                        
+                        tcard1.setCardnumber(CardNumberEnum.Nine);
+                        tcard1.setCardtype(CardTypeEnum.Spade);
+                        
+                        tcard2.setCardnumber(CardNumberEnum.Nine);
+                        tcard2.setCardtype(CardTypeEnum.Hearts);
+                        
+                        tcard3.setCardnumber(CardNumberEnum.Five);
+                        tcard3.setCardtype(CardTypeEnum.Diamond);
+                        
+                        tcard4.setCardnumber(CardNumberEnum.Five);
+                        tcard4.setCardtype(CardTypeEnum.Club);
+                        
+                        testcards.add(tcard);
+                        testcards.add(tcard1);
+                        testcards.add(tcard2);
+                        testcards.add(tcard3);
+                        testcards.add(tcard4);
+                        getUnitTestResuts(testcards);
+                    	break;
+                    case 9:
+                        testcards.clear();
+                        tcard = new Card();
+                        tcard1 = new Card();
+                        tcard2 = new Card();
+                        tcard3 = new Card();
+                        tcard4 = new Card();
+                        
+                        tcard.setCardnumber(CardNumberEnum.Nine);
+                        tcard.setCardtype(CardTypeEnum.Spade);
+                        
+                        tcard1.setCardnumber(CardNumberEnum.Ten);
+                        tcard1.setCardtype(CardTypeEnum.Hearts);
+                        
+                        tcard2.setCardnumber(CardNumberEnum.Six);
+                        tcard2.setCardtype(CardTypeEnum.Club);
+                        
+                        tcard3.setCardnumber(CardNumberEnum.Six);
+                        tcard3.setCardtype(CardTypeEnum.Spade);
+                        
+                        tcard4.setCardnumber(CardNumberEnum.Two);
+                        tcard4.setCardtype(CardTypeEnum.Diamond);
+                        
+                        testcards.add(tcard);
+                        testcards.add(tcard1);
+                        testcards.add(tcard2);
+                        testcards.add(tcard3);
+                        testcards.add(tcard4);
+                        getUnitTestResuts(testcards);
+                    	break;
+                    case 10:
                     	Init();
             }
 
             System.out.println("Select your Option");
-            System.out.println(ANSI_RED + "1.Royal Flush \n2.Straight Flush\n3.Four of a Kind\n4.Full House\n5.Flush\n6.Back" + ANSI_RESET);
+            System.out.println(ANSI_RED + "1.Royal Flush \n2.Straight Flush\n3.Four of a Kind\n4.Full House\n5.Flush\n6. Straight\n7.Three of a kind\n8.Two pair\n9.One pair\n10. Back" + ANSI_RESET);
             System.out.println("Option : ");
         }   
         
@@ -404,7 +474,7 @@ public class Main {
 		   
 		   for(Card playercard : card) {
 				
-				display += playercard.getCardcolor() + playercard.getCardnumber().getCardLebal() + playercard.getCardsuit() +" "+ ANSI_RESET;
+				display += playercard.getCardtype().getSuitColor() + playercard.getCardnumber().getCardLebal() + playercard.getCardtype().getSuitIcon() +" "+ ANSI_RESET;
 			}
 		   outStream.println(display);
 		   System.out.println(ANSI_CYAN  +"You have : "  + ANSI_RESET + ANSI_YELLOW + cardresults.getCardsResulst().getFriendlyName()+  ANSI_RESET);	
